@@ -18,7 +18,7 @@ body{
     font-family: Roboto, sans-serif;
     line-height: 1.6;  
 }
-header {
+header {           
     background-color: white;
     box-shadow: 2px 6px 10px rgba(0, 0, 0, 0.05)
     position: sticky;
@@ -35,10 +35,11 @@ header div{
     font-weight: bold;
     color: var(--violet-doux);
 }
-<<<<<<< HEAD
+
 
 ul li{
     list-style: none;
+    margin: 15px;
 }
 
 ul{
@@ -55,7 +56,7 @@ ul li a{
     padding: 10px 0;
 }
  
- ul li a:hover{
+ul li a:hover{
     color: var(--violet-doux);
 }
 
@@ -65,8 +66,9 @@ ul li a::after{
     left: 0;
     bottom: 0;
     height: 3px;
+    width: 0;
     background-color: var(--violet-doux);
-    transition: width 0.3s esse;
+    transition: width 0.3s ease;
 }
 
 ul li a:hover::after{
@@ -81,16 +83,67 @@ a.active::after {
     width: 100%;
 }
 
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    text-align: center;
+    margin: 10rem 2rem;
+}
 
-       
+.hero img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 300px;
+    border: 8px solid var(--violet-doux);
+}
+
+.hero h1 {
+    color: var(--violet-doux);
+    font-size: 4rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+}
+
+.hero p {
+    color: var(--gris-fonce);
+    font-size: 1.3rem;
+    margin-bottom: 1.2rem;
+}
+
+.hero a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: var(--violet-doux);
+    color: white;
+    padding: 15px 30px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hero a:hover {
+    background-color: var(--violet-fonce);
+    transform: translate(-3px);
+}
 
 
 
- 
 
 
 
-=======
-      
- 
->>>>>>> ecbbd1305deda199a1731314bef78a2aba5bdee0
+
+
+
+
+
+
+
+
+
+
